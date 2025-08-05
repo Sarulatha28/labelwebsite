@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
 import { Link } from "react-router-dom";
@@ -7,23 +6,23 @@ import img17 from './assets/img17.jpg'
   return (
     <div>
         <footer className="bg-[#31034A] font-roboto text-gray-200 px-4 py-8">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 md:gap-8">
+  <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-2 md:gap-8">
 
     {/* Left: Tech World - occupies 50% */}
-    <div className="mb-8 md:mb-0">
+    <div className="mb-2 mr-2 md:mb-0">
   <div className="flex items-center gap-4">
-    <img src={img17} alt="img" className="w-12 h-12 object-cover" />
+    <img src={img17} alt="img" className="w-6 h-6  object-cover" />
     <h4 className="font-roboto font-bold text-[24px] leading-[100%] tracking-[0%]">
       Tech World
     </h4>
   </div>
 
 
-      <p className=" font-jakarta font-normal mt-6 text-[14px] leading-[24px] tracking-[0%] mb-4"> A team of experienced designers and developers dedicated to creating exceptional websites.Providing custom web solution and Digital Marketing tailored to your specific business goals.</p>
+      <p className=" font-jakarta font-normal mt-3 text-[14px] leading-[24px] tracking-[0%] mb-4"> A team of experienced designers and developers dedicated to creating exceptional websites.Providing custom web solution and Digital Marketing tailored to your specific business goals.</p>
       
 
       {/* Social Icons */}
-      <div className="flex space-x-4 mb-4">
+      <div className="flex space-x-4 mb-2">
         <a href="#" className="hover:text-white text-xl"><FaFacebookF /></a>
         <a href="#" className="hover:text-white text-xl"><FaTwitter /></a>
         <a href="#" className="hover:text-white text-xl"><FaLinkedinIn /></a>
@@ -47,9 +46,9 @@ import img17 from './assets/img17.jpg'
       <div>
         <h4 className="font-bold font-roboto text-[18px] mb-2">Pages</h4>
         <ul className="space-y-1  font-roboto font-normal text-[14px]">
-          <li>Home it work</li>
-          <li>About us</li>
-          <li>Contact</li>
+          <li ><Link to="/wove" className="hover:text-[#7506B1]">Home it work</Link></li>
+       <li ><Link to="/about" className="hover:text-[#7506B1]">About us</Link></li>
+       <li ><Link to="/contact" className="hover:text-[#7506B1]">Contact</Link></li>
         </ul>
       </div>
      <div className="space-y-2">

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
 
+
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
   return (
@@ -24,10 +25,10 @@ const Navbar = () => {
                 </div>
                 {menuOpen && (
                   <div className="md:hidden bg-white shadow px-4 py-4 space-y-2">
-                    <a href="home" className="block hover:text-purple-600">Home</a>
-                    <a href="about" className="block hover:text-purple-600">About</a>
-                    <a href="pricing" className="block hover:text-purple-600">Pricing</a>
-                    <a href="contact" className="block hover:text-purple-600">Contact Us</a>
+                    <Link to="/" className="block hover:text-purple-600">Home</Link>
+                   <Link to= "/about" className="block hover:text-purple-600">About</Link>
+                    <Link to="/pricing" className="block hover:text-purple-600">Pricing</Link>
+                  <Link to=  "/contact" className="block hover:text-purple-600">Contact Us</Link>
                   </div>
                 )}
               </header>

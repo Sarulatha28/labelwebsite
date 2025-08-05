@@ -9,6 +9,7 @@ import img22 from '/src/assets/img22.jpg';
 import img23 from '/src/assets/img23.jpg';
 import img24 from '/src/assets/img24.jpg';
 import img25 from '/src/assets/img25.jpg';
+import { Link } from "react-router-dom";
 
 
 const Aboutus = () => {
@@ -49,9 +50,10 @@ const Aboutus = () => {
     </p>
   </div>
 </div>
+<Link to="/contact">
  <button className="bg-[#7506B1] text-white font-inter font-semibold text-[16px] leading-[24px] tracking-[0] px-5 py-2 rounded-md hover:bg-purple-800">
             Contact us
-          </button>
+          </button></Link>
         </div>
         <div>
           <img
