@@ -14,7 +14,7 @@ const Navbar = () => {
                  <nav className="hidden font-jakarta font-medium text-[14px] leading-[100%] tracking-[0%] md:flex space-x-6">
           <Link to="/" className="hover:text-purple-600">Home</Link>
           <Link to="/about" className="hover:text-purple-600">About</Link>
-          <Link to="/pricing" className="hover:text-purple-600">Pricing</Link>
+          <Link to="/printed" className="hover:text-purple-600">Pricing</Link>
           <Link to="/contact" className="hover:text-purple-600">Contact Us</Link>
         </nav>
         
@@ -27,7 +27,7 @@ const Navbar = () => {
                   <div className="md:hidden bg-white shadow px-4 py-4 space-y-2">
                     <Link to="/" className="block hover:text-purple-600">Home</Link>
                    <Link to= "/about" className="block hover:text-purple-600">About</Link>
-                    <Link to="/pricing" className="block hover:text-purple-600">Pricing</Link>
+                    <Link to="/printed" className="block hover:text-purple-600">Pricing</Link>
                   <Link to=  "/contact" className="block hover:text-purple-600">Contact Us</Link>
                   </div>
                 )}
