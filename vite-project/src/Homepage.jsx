@@ -55,34 +55,37 @@ const HomePage = () => {
       {/* Navbar */}
       <Navbar/>
       {/* Hero Section */}
-     <section id="home" className="bg-white py-10 md:py-13 px-29">
+     <section id="home" className="bg-white py-10 md:py-13 px-4 sm:px-6">
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     
     {/* Left Text Section */}
-    <div  className="self-start md:mt-28">
-      <h1 className="text-sm font-inter font-normal uppercase mb-1 ">Welcome to</h1>
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-inter font-bold leading-tight mb-4">
-        <span className="text-[#7506B1]">Best Business</span> of the <br /> Garment Arena
+    <div className="mt-6 md:mt-28">
+      <h1 className="text-xs sm:text-sm font-inter font-normal uppercase mb-1">
+        Welcome to
+      </h1>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-inter font-bold leading-tight mb-4">
+        <span className="text-[#7506B1]">Best Business</span> of the <br className="hidden sm:block" /> Garment Arena
       </h2>
-      <p className="text-gray-600 mb-6">
-        Design Your Style: Unleash Your Creativity on <br/>Our Premium Apparel.
+      <p className="text-gray-600 mb-6 text-sm sm:text-base">
+        Design Your Style: Unleash Your Creativity on <br className="hidden sm:block" /> Our Premium Apparel.
       </p>
-      <button className="bg-purple-600 text-white px-5 py-3 rounded hover:bg-purple-700 transition">
+      <button className="bg-purple-600 text-white px-5 py-3 rounded hover:bg-purple-700 transition text-sm sm:text-base">
         Get Free Consultation
       </button>
     </div>
 
-    {/* Right Image Section with Margin on Right */}
-    <div className="flex justify-center mt-10 mr-13 md:justify-end">
+    {/* Right Image Section */}
+    <div className="flex justify-center md:justify-end mt-6 md:mt-0">
       <img 
         src={img1} 
         alt="Machine" 
-        className="rounded-xl shadow-xl w-full max-w-[90%] md:max-w-[600px] h-full sm:h-[250px] md:h-[445px] object-cover md:mr-6"
+        className="rounded-xl shadow-xl w-full max-w-[90%] md:max-w-[600px] h-[220px] sm:h-[280px] md:h-[445px] object-cover"
       />
     </div>
 
   </div>
 </section>
+
 
       {/* About Section */}
       <section id="about" className="bg-[#F1E6F7] py-12 md:py-20 px-4">
