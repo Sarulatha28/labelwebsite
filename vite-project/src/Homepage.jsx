@@ -5,6 +5,7 @@ import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import tickIcon from "/src/assets/tick-icon.png";
 import img1 from './assets/img1.jpg'
 import img2 from './assets/img2.jpg'
 import img4 from './assets/img4.jpg'
@@ -109,9 +110,11 @@ const HomePage = () => {
       className="bg-white rounded-xl shadow hover:shadow-md transition p-4 flex items-start"
     >
       {/* Left emoji */}
-      <div className="text-2xl md:text-3xl mr-3">✅</div>
+
+      <div className="text-2xl md:text-3xl mr-3">
+       <img src={tickIcon} alt="About" />
       {/* Right text, starts lower */}
-      <p className="text-sm md:text-base mt-1">{text}</p>
+      <p className="text-sm md:text-base mt-1">{text}</p></div>
     </div>
   ))}
 </div>
