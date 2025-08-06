@@ -43,9 +43,18 @@ export default function ContactUs() {
       {/* Map and form */}
       <div className="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-8">
         {/* Map */}
-        <div>
-         <img src={img26} alt="Illustration" className="w-90 h-full md:w-full" />
-        </div>
+        <div className="w-full h-[300px] mb-6 border border-purple-300 rounded-md overflow-hidden shadow-md">
+        <iframe
+          title="Google Map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.843156689514!2d144.96305831531557!3d-37.816279179751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43f1f4f1fb%3A0xfaa6f7566f2e1a2c!2sEnvato!5e0!3m2!1sen!2sin!4v1668431221337!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
 
         {/* Contact form */}
        <div className="px-4 py-8 max-w-4xl mx-auto">
