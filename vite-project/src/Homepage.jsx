@@ -69,7 +69,7 @@ const HomePage = () => {
       <p className="text-gray-600 mb-10 text-xl sm:2xl">
         Design Your Style: Unleash Your Creativity on <br className="hidden sm:block" /> Our Premium Apparel.
       </p>
-      <button className="bg-purple-600 text-white px-5 py-3 rounded-[7%] hover:bg-purple-700 transition text-sm sm:text-base">
+      <button className="bg-[#53047E] text-white px-5 py-3 rounded-[3/4] hover:bg-purple-700 transition text-sm sm:text-base">
         Get Free Consultation
       </button>
     </div>
@@ -140,7 +140,7 @@ const HomePage = () => {
 
 <section className="py-12 md:py-20 px-4">
   <div className="max-w-7xl mx-auto">
-    <h3 className="bg-purple-600 w-[120px] h-8 rounded-[10px] font-inter font-normal text-[14px] leading-[30px] tracking-[0%] uppercase text-white font-semibold mb-2 mx-auto text-center">
+    <h3 className="bg-[#53047E] w-[120px] h-8 rounded-full  font-inter font-normal text-[14px] leading-[30px] tracking-[0%] uppercase text-white font-semibold mb-2 mx-auto text-center">
       Our Services
     </h3>
 
