@@ -16,7 +16,7 @@ import img13 from '/src/assets/img13.jpg';
 import img14 from '/src/assets/img14.jpg';
 import img15 from '/src/assets/img15.jpg';
 import img16 from '/src/assets/img16.jpg';
-
+import img17 from '/src/assets/tick-icon.png';
 const testimonials = [
   {
     name: "Kristin Watson",
@@ -48,35 +48,34 @@ const testimonials = [
 const HomePage = () => {
   return (
     <div className="font-sans text-gray-800">
-     
-
-
-      {/* Navbar */}
+     {/* Navbar */}
       <Navbar/>
       {/* Hero Section */}
-     <section id="home" className="bg-white py-10 md:py-16 px-4">
+    <section id="home" className="bg-white py-10 md:py-13 px-6 sm:px-25">
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     
     {/* Left Text Section */}
-    <div  className="self-start md:mt-20">
-      <h1 className="text-sm font-inter font-normal uppercase mb-1 ">Welcome to</h1>
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-inter font-bold leading-tight mb-4">
-        <span className="text-[#7506B1]">Best Business</span> of the <br /> Garment Arena
+    <div className="ml-2 sm:ml-4 md:ml-0 mt-3 md:mt-20">
+      <h1 className="text-lg sm:text-xl font-inter font-normal uppercase mb-1">
+        Welcome to
+      </h1>
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-inter font-bold leading-tight mb-4">
+        <span className="text-purple-500 ">Best Business</span> of the <br className="hidden sm:block" /> Garment Arena
       </h2>
-      <p className="text-gray-600 mb-6">
-        Design Your Style: Unleash Your Creativity on <br/>Our Premium Apparel.
+      <p className="text-gray-600 mb-6 text-lg sm:sm">
+        Design Your Style: Unleash Your Creativity on <br className="hidden sm:block" /> Our Premium Apparel.
       </p>
-      <button className="bg-purple-600 text-white px-5 py-3 rounded hover:bg-purple-700 transition">
+      <button className=" bg-[#53047E] text-white px-5 py-3 rounded-[10px] hover:bg-purple-700 transition text-sm sm:text-base">
         Get Free Consultation
       </button>
     </div>
 
-    {/* Right Image Section with Margin on Right */}
-    <div className="flex justify-center mr-13 md:justify-end">
+    {/* Right Image Section */}
+    <div className="flex justify-center md:justify-end mt-6 md:mt-0">
       <img 
         src={img1} 
         alt="Machine" 
-        className="rounded-xl shadow-xl w-full max-w-[90%] md:max-w-[600px] h-[200px] sm:h-[300px] md:h-[545px] object-cover md:mr-6"
+        className="rounded-xl shadow-xl w-full max-w-[90%] md:max-w-[600px] h-[220px] sm:h-[280px] md:h-[445px] object-cover"
       />
     </div>
 
@@ -87,15 +86,22 @@ const HomePage = () => {
       <section id="about" className="bg-[#F1E6F7] py-12 md:py-20 px-4">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <img src={img4} alt="About" className=" shadow-lg w-3/4 h-50md:w-full mx-auto md:mx-0" />
-          <div>
-            <Link to="/about">
-  <h3 className="text-xl font-semibold mb-4 text-white h-8 w-30 text-center rounded-[10px] bg-purple-600 cursor-pointer">
-    About Us
-  </h3>
-</Link>
+          <div className="max-w-xl mx-auto px-4 sm:px-6 text-center md:text-left">
+  <Link to="/about">
+    <h3 className="inline-block bg-[#53047E] text-white text-sm font-bold px-3 py-1.5 rounded-full mb-2">
+      About Us
+    </h3>
+  </Link>
 
-            <h2 className="text-2xl md:text-3xl font-inter font-semibold mb-4">Let's Build Something Creative Together</h2>
-            <p className="mb-4">KGA specializes in Printed labels, Woven Labels, Barcode Stickers & Heat Transfer Stickers.</p>
+  <h2 className="text-2xl md:text-3xl font-inter font-semibold mb-4">
+    Let's Build Something Creative Together
+  </h2>
+
+  <p className="mb-4">
+    KGA specializes in Printed labels, Woven Labels, Barcode Stickers & Heat Transfer Stickers.
+  </p>
+
+
             <ul className="space-y-2 text-sm md:text-base">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
   {[
@@ -109,9 +115,11 @@ const HomePage = () => {
       className="bg-white rounded-xl shadow hover:shadow-md transition p-4 flex items-start"
     >
       {/* Left emoji */}
-      <div className="text-2xl md:text-3xl mr-3">✅</div>
+      <div className="text-2xl md:text-3xl mr-3">
+       <img src={img17} alt="About"  />
       {/* Right text, starts lower */}
       <p className="text-sm md:text-base mt-1">{text}</p>
+      </div>
     </div>
   ))}
 </div>
@@ -126,7 +134,7 @@ const HomePage = () => {
 
 <section className="py-12 md:py-20 px-4">
   <div className="max-w-7xl mx-auto">
-    <h3 className="bg-purple-600 w-[120px] h-8 rounded-[10px] font-inter font-normal text-[14px] leading-[30px] tracking-[0%] uppercase text-white font-semibold mb-2 mx-auto text-center">
+    <h3 className="bg-[#53047E] w-[120px] h-8 rounded-full font-inter font-normal text-[14px] leading-[30px] tracking-[0%] uppercase text-white font-semibold mb-2 mx-auto text-center">
       Our Services
     </h3>
 
@@ -179,16 +187,16 @@ const HomePage = () => {
       </section>
 
      {/* Testimonials */}
-<section className="py-12 md:py-20 px-4">
+<section className="py-12 md:py-20 px-7">
   <div className="max-w-7xl mx-auto">
     <h2 className="text-2xl md:text-3xl font-bold text-center">Testimonials</h2>
-    <h3 className="text-sm md:text-lg text-center mb-8">What Our Customers Are Saying</h3>
+    <h3 className="text-sm md:text-lg text-center mb-15">What Our Customers Are Saying</h3>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
       {testimonials.map((item, idx) => (
         <div key={idx} className="bg-white p-4 rounded shadow hover:shadow-lg transition h-full flex flex-col justify-between">
           {/* Stars and badge */}
-          <div className="flex justify-between items-center mb-2">
+          <div className="flex justify-between items-center mb-8">
             <div className="flex space-x-0.5 text-yellow-400 text-base">
               {[...Array(5)].map((_, starIdx) => (
                 <span key={starIdx}>★</span>

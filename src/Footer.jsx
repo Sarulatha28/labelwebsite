@@ -47,9 +47,10 @@ import img17 from './assets/img17.jpg'
       <div>
         <h4 className="font-bold font-roboto text-[18px] mb-2">Pages</h4>
         <ul className="space-y-1  font-roboto font-normal text-[14px]">
-          <li>Home it work</li>
-          <li>About us</li>
-          <li>Contact</li>
+           <li><Link to="/" className="hover:text-[#7506B1]">Home it work</Link></li>
+  <li><Link to="/about" className="hover:text-[#7506B1]">About us</Link></li>
+  <li><Link to="/contact" className="hover:text-[#7506B1]">Contact</Link></li>
+         
         </ul>
       </div>
      <div className="space-y-2">

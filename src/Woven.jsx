@@ -23,34 +23,35 @@ import LabelSidebar from './assets/LabelSidebar';
           {/* Left Sidebar */}
          <LabelSidebar/>
           {/* Main Content */}
-          <section className="md:col-span-3 space-y-6">
-            <h2 className="text-3xl font-inter font-semibold">Woven Labels</h2>
 
-            {/* Image */}
-            <img
-              src={img10}
-              alt="Printed Labels"
-              className="w-full h-auto rounded-[24px]"
-            />
+       <section className="md:col-span-3 space-y-6 pr-4 md:pr-10">
+  <h2 className="text-3xl font-inter font-semibold">Woven Labels</h2>
 
-            {/* Paragraphs */}
-            <p className="font-inter font-normal text-[20px]">
-              Printed labels in the textile and garment industry play a crucial role in branding,
+  {/* Image */}
+  <img
+    src={img10}
+    alt="Printed Labels"
+    className="w-full h-auto rounded-[24px]"
+  />
+
+  {/* Paragraph */}
+  <p className="font-inter font-normal text-[20px]">
+   Printed labels in the textile and garment industry play a crucial role in branding,
               information dissemination, and regulatory compliance. These labels often include
               details such as brand name, size, fabric composition, care instructions, and country
               of origin. By providing this information, printed labels help consumers make informed decisions
               about the products they purchase and properly care for them. Additionally, regulatory
               labels that comply with standards help manufacturers avoid penalties.
-            </p>
+  </p>
 
-            {/* Blockquote */}
-            <blockquote className="border-r-4 border-b-4 border-[#7506B1] font-inter font-normal italic text-[20px] bg-purple-50 p-4 rounded">
-              Printed labels in textiles provide essential information about garment care,
+  {/* Blockquote */}
+  <blockquote className="border-r-4 border-b-4 border-[#7506B1] font-inter font-normal italic text-[20px] bg-purple-50 p-4 rounded">
+     Printed labels in textiles provide essential information about garment care,
               composition, and branding, ensuring consumer satisfaction and regulatory compliance.
               Advances in printing technology and sustainable materials enhance label durability and
               align with eco-friendly practices.
-            </blockquote>
-          </section>
+  </blockquote>
+</section>
         </div>
       </main>
 

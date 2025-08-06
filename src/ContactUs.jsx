@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Navbar from './Navbar';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { Phone, Mail, MapPin } from "lucide-react";
-
+import img29 from '/src/assets/img27.jpg'
 export default function ContactUs() {
   const [formData, setFormData] = useState({
     fullName: "",
@@ -42,13 +42,16 @@ export default function ContactUs() {
       <div className="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-8">
         {/* Map */}
         <div>
-          <iframe
-            title="Google Map"
-            className="w-full h-80 rounded-md"
-            src="https://www.google.com/maps/embed?pb=!1m18!..." 
-            allowFullScreen=""
-            loading="lazy"
-          ></iframe>
+         <iframe
+  title="Google Map"
+  className="w-full h-80 rounded-md"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.8302239227134!2d-74.5432568!3d40.6120934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b4bdb8e24513%3A0x89f7dd9f14ad6d6f!2s2464%20Royal%20Ln%2C%20North%20Brunswick%20Township%2C%20NJ%2008902%2C%20USA!5e0!3m2!1sen!2sin!4v1691879535042!5m2!1sen!2sin" 
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
+
         </div>
 
         {/* Contact form */}
@@ -93,9 +96,13 @@ export default function ContactUs() {
               className="w-full border rounded px-3 py-2 h-28 resize-none"
               required
             ></textarea>
-            <button type="submit" className="bg-[#7506B1] text-white px-58 py-2 rounded">
-              Send Now
-            </button>
+           <button
+  type="submit"
+  className="bg-[#7506B1] text-white w-full md:w-auto px-6 md:px-20 py-2 md:py-3 rounded text-base md:text-lg"
+>
+  Send Now
+</button>
+
           </form>
         </div>
       </div>
@@ -113,7 +120,7 @@ export default function ContactUs() {
     </div>
     <div className="flex items-center gap-3">
       <MapPin size={24} color="#7506B1" />
-      <span className="text-[#7506B1] font-inter font-normal text-[20px]">Your location text here</span>
+      <span className="text-[#7506B1] font-inter font-normal text-[20px]"> 2464 royalLn.Mesa,New Jersey 45463</span>
     </div>
 
     <div className="flex gap-4 mt-4">
@@ -125,7 +132,7 @@ export default function ContactUs() {
   </div>
 
   <div className="flex justify-center">
-    <img src="/path/to/illustration.png" alt="Illustration" className="w-72 md:w-80" />
+    <img src={img29} alt="Illustration" className="w-72 md:w-80" />
   </div>
 </div>
 
