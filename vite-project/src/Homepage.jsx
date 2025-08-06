@@ -55,21 +55,21 @@ const HomePage = () => {
       {/* Navbar */}
       <Navbar/>
       {/* Hero Section */}
-     <section id="home" className="bg-white py-10 md:py-13 px-4 sm:px-6">
+     <section id="home" className="bg-white py-10 md:py-13 px-2 sm:px-25">
   <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     
     {/* Left Text Section */}
-    <div className="mt-6 md:mt-28">
-      <h1 className="text-xs sm:text-sm font-inter font-normal uppercase mb-1">
+    <div className="ml-2 sm:ml-4 md:ml-0 mt-6 md:mt-28">
+      <h1 className="text-lg sm:text-xl font-inter font-normal uppercase mb-1">
         Welcome to
       </h1>
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-inter font-bold leading-tight mb-4">
+      <h2 className="text-5xl sm:text-4xl md:text-4xl lg:text-5xl font-inter font-bold leading-tight mb-4">
         <span className="text-[#7506B1]">Best Business</span> of the <br className="hidden sm:block" /> Garment Arena
       </h2>
-      <p className="text-gray-600 mb-6 text-sm sm:text-base">
+      <p className="text-gray-600 mb-10 text-xl sm:2xl">
         Design Your Style: Unleash Your Creativity on <br className="hidden sm:block" /> Our Premium Apparel.
       </p>
-      <button className="bg-purple-600 text-white px-5 py-3 rounded hover:bg-purple-700 transition text-sm sm:text-base">
+      <button className="bg-purple-600 text-white px-5 py-3 rounded-[7%] hover:bg-purple-700 transition text-sm sm:text-base">
         Get Free Consultation
       </button>
     </div>
@@ -92,14 +92,22 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-8 items-center">
           <img src={img4} alt="About" className=" shadow-lg w-3/4 h-50md:w-full mx-auto md:mx-0" />
           <div>
-            <Link to="/about">
-  <h3 className="text-xl font-semibold mb-4 text-white h-8 w-30 text-center rounded-[10px] bg-purple-600 cursor-pointer">
-    About Us
-  </h3>
-</Link>
+           <div className="max-w-xl mx-auto px-4 sm:px-6 text-center md:text-left">
+  <Link to="/about">
+    <h3 className="inline-block bg-[#53047E] text-white text-sm font-bold px-3 py-1.5 rounded-full mb-2">
+      About Us
+    </h3>
+  </Link>
 
-            <h2 className="text-2xl md:text-3xl font-inter font-semibold mb-4">Let's Build Something Creative Together</h2>
-            <p className="mb-4">KGA specializes in Printed labels, Woven Labels, Barcode Stickers & Heat Transfer Stickers.</p>
+  <h2 className="text-2xl md:text-3xl font-inter font-semibold mb-4">
+    Let's Build Something Creative Together
+  </h2>
+
+  <p className="mb-4">
+    KGA specializes in Printed labels, Woven Labels, Barcode Stickers & Heat Transfer Stickers.
+  </p>
+</div>
+
             <ul className="space-y-2 text-sm md:text-base">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
   {[
