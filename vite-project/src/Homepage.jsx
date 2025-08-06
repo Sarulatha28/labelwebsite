@@ -185,7 +185,7 @@ const HomePage = () => {
             
 
       {/* Call to Action */}
-      <section className="bg-[#7506B1] text-white rounded-[10px] text-center py-12 ml-20 mr-20 md:py-16 px-4">
+      <section className="bg-[#7506B1] text-white rounded-[30px] text-center py-12 ml-20 mr-20 md:py-16 px-4">
         <h2 className="text-2xl md:text-3xl font-semibold mb-4">Provide the highest quality work that<br/> meets your expectation</h2>
         <button className="bg-white text-black  px-6 py-3 rounded font-semibold hover:bg-gray-100">
           Get Free Consultation
@@ -195,14 +195,14 @@ const HomePage = () => {
      {/* Testimonials */}
 <section className="py-12 md:py-20 px-4">
   <div className="max-w-7xl mx-auto">
-    <h2 className="text-2xl md:text-3xl font-bold text-center">Testimonials</h2>
+    <h2 className="text-3xl md:text-4xl font-bold text-center">Testimonials</h2>
     <h3 className="text-sm md:text-lg text-center mb-8">What Our Customers Are Saying</h3>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
       {testimonials.map((item, idx) => (
         <div key={idx} className="bg-white p-4 rounded shadow hover:shadow-lg transition h-full flex flex-col justify-between">
           {/* Stars and badge */}
-          <div className="flex justify-between items-center mb-2">
+          <div className="flex justify-between items-center mb-8">
             <div className="flex space-x-0.5 text-yellow-400 text-base">
               {[...Array(5)].map((_, starIdx) => (
                 <span key={starIdx}>★</span>
@@ -220,7 +220,7 @@ const HomePage = () => {
           </div>
 
           {/* Feedback */}
-          <p className="text-base leading-relaxed mb-4 text-gray-700">{item.text}</p>
+          <p className="text-base leading-relaxed mb-10 text-gray-700">{item.text}</p>
 
           {/* User info */}
           <div className="flex items-center bg-[#F3E8EE] p-2 rounded">
