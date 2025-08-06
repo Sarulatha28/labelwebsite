@@ -43,8 +43,6 @@ const testimonials = [
     text: "Exceptional support and quality! Will definitely continue to use their service in future projects."
   },
 ];
-
-
 const HomePage = () => {
   return (
     <div className="font-sans text-gray-800">

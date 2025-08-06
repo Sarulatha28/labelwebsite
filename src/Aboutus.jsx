@@ -1,6 +1,7 @@
 import React from "react";
 import Footer from './Footer';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 import img18 from '/src/assets/img18.jpg';
 import img19 from '/src/assets/img19.jpg';
 import img20 from '/src/assets/img20.jpg';
@@ -49,9 +50,10 @@ const Aboutus = () => {
     </p>
   </div>
 </div>
+<Link to="/contact">
  <button className="bg-[#7506B1] text-white font-inter font-semibold text-[16px] leading-[24px] tracking-[0] px-5 py-2 rounded-md hover:bg-purple-800">
             Contact us
-          </button>
+          </button></Link>
         </div>
         <div>
           <img
